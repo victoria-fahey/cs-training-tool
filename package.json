@@ -1,10 +1,10 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "cs-training-tool",
   "version": "0.2.3",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "COREsea Coral Reef Monitoring Training Tool ",
+  "repository": "https://github.com/victoria-fahey/cs-training-tool.git",
   "main": "server/index.js",
-  "author": "EDA",
+  "author": "Victoria Fahey",
   "license": "ISC",
   "scripts": {
     "client": "webpack serve --config ./client/webpack.config.js --hot",
@@ -31,12 +31,6 @@
       "@babel/plugin-proposal-class-properties",
       "@babel/plugin-proposal-object-rest-spread",
       "@babel/plugin-transform-runtime"
-    ]
-  },
-  "eslintConfig": {
-    "extends": "eda",
-    "ignorePatterns": [
-      "bundle.js"
     ]
   },
   "eslintConfig": {
