@@ -42,9 +42,10 @@
   
   p {
     margin-top: 0;
-    font-size: larger;
+    font-size: x-large;
     font-weight: 100;
     color: #3a4a58;
+
 }
   
   
@@ -319,3 +320,35 @@
 .content {
     text-align: center;
 }
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #011e40;
+  color: #fff;
+ }
+ .nav-links a {
+  color: #fff;
+ }
+ /* LOGO */
+ .logo img{
+  height: 100px;
+  width: 250px;
+ }
+ /* NAVBAR MENU */
+ .menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+ }
+ .menu li:hover {
+  background-color: #011e40;
+  border-radius: 5px;
+  transition: 0.3s ease;
+ }
+ .menu li {
+  padding: 5px 14px;
+ }
