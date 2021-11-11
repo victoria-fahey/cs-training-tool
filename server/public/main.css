@@ -52,9 +52,9 @@
   /* Links
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   a {
-    color: #1EAEDB; }
+    color: #fff; }
   a:hover {
-    color: #0FA0CE; }
+    color: #fff; }
   
   
   /* Buttons
@@ -326,11 +326,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px;
   background-color: #011e40;
-  color: #fff;
- }
- .nav-links a {
   color: #fff;
  }
  /* LOGO */
@@ -342,13 +339,6 @@
  .menu {
   display: flex;
   gap: 1em;
-  font-size: 18px;
- }
- .menu li:hover {
-  background-color: #011e40;
-  border-radius: 5px;
-  transition: 0.3s ease;
- }
- .menu li {
-  padding: 5px 14px;
+  font-size: x-large;
+  padding: 5px;
  }
