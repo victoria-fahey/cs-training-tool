@@ -12,7 +12,7 @@
     line-height: 1.6;
     font-weight: 400;
     font-family: 'Roboto Condensed', sans-serif;
-    color: black; 
+    color: #011e40; 
     background-color: white;
   }
   
@@ -44,6 +44,7 @@
     margin-top: 0;
     font-size: larger;
     font-weight: 100;
+    color: #3a4a58;
 }
   
   
@@ -308,3 +309,13 @@
   
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {}
+
+  /* styles I've added */
+
+.title {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+}
