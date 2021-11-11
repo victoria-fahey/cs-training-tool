@@ -3,10 +3,17 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <div>
+      <div className='nav-bar'>
+        <img src="/images/cs-logo.png"/>
+      </div>
+      <div className='title'>
         <h1>Coral Reef Monitoring Training Tool</h1>
-        <h2>sub title</h2>
-        <p>testing paragraph blah blah</p>
+        <br/>
+        <img src="/images/banner.png" />
+      </div>
+      <div className='content'>
+        <h2>Blurb about coral reefs</h2>
+        <p>Coral reefs are important...</p>
       </div>
     </>
   )
