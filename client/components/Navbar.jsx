@@ -11,15 +11,10 @@ const Navbar = () => {
         </div>
         <div className="menu">
           <Link to={'/'}>Home</Link>
-          <Link to={'/'}>Coral ID</Link>
-          <Link to={'/'}>Fish ID</Link>
-          <Link to={'/'}>Bleaching</Link>
+          <Link to={'/coral-id-101'}>Coral ID</Link>
+          <Link to={'/fish-id-101'}>Fish ID</Link>
+          <Link to={'/bleaching-101'}>Bleaching</Link>
           <a href="https://coresea.com/">COREsea</a>
-          {/* <a href="/">Home</a> */}
-          {/* <a href="/">Coral ID</a> */}
-          {/* <a href="/">Fish ID</a> */}
-          {/* <a href="/">Bleaching</a> */}
-          {/* <a href="https://coresea.com/">COREsea</a> */}
         </div>
       </nav>
     </>
