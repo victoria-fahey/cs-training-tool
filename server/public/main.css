@@ -190,7 +190,11 @@ input[type="button"]:hover {
   /* Lists
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   ul {
-    list-style: circle inside; }
+    list-style: circle inside; 
+    color: #3a4a58;
+    font-size: x-large;
+    text-align: left;
+  }
   ol {
     list-style: decimal inside; }
   ol, ul {
@@ -343,26 +347,28 @@ input[type="button"]:hover {
  }
 
 /* styles I've added */
-
 .title {
   text-align: center;
 }
-
 .content {
   text-align: center;
 }
 
+/* THIS DIVIDES PAGE UP EVENLY */
 .flex-container {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
   text-align: center;
 }
-
 .flex-child {
   flex: 1
 }
+.coral-flex-child {
+  flex: 2;
+  margin-right: 50px;
+}
 
+
+/* HOVERING OVER IMAGE TO DISPLAY TEXT */
 .info-image {
   object-fit: cover;
   width: 400px;
@@ -370,7 +376,6 @@ input[type="button"]:hover {
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .container {
   position: relative;
   width: 100%;
@@ -390,7 +395,89 @@ input[type="button"]:hover {
 .container:hover .overlay-text {
 opacity: 1;
 }
-
 .container:hover .info-image {
   opacity: 0.4;
+}
+
+/* RADIO BUTTONS */
+.rad-label {
+  display: flex;
+  align-items: center;
+
+  border-radius: 100px;
+  padding: 14px 16px;
+  margin: 10px 0;
+
+  cursor: pointer;
+  transition: .3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+  background: hsla(0, 0%, 80%, .14);
+}
+
+.rad-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  z-index: -1;
+}
+
+.rad-design {
+  width: 22px;
+  height: 22px;
+  border-radius: 100px;
+
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+  position: relative;
+}
+
+.rad-design::before {
+  content: '';
+
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+
+  background: hsl(0, 0%, 90%);
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+.rad-input:checked+.rad-design::before {
+  transform: scale(0);
+}
+
+.rad-text {
+  /* color: hsl(0, 0%, 60%); */
+  color: #3a4a58;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 900;
+  transition: .3s;
+}
+
+.rad-input:checked~.rad-text {
+  color: hsl(0, 0%, 40%);
+}
+
+/* IMAGE SIZING FOR CORAL ID PAGE */
+.coral-id-image {
+  object-fit: cover;
+  width: 800px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.li-not-center {
+  text-align: left;
 }

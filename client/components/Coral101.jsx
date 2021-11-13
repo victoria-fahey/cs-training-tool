@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 function Coral101 () {
   return (
     <>
@@ -8,7 +10,7 @@ function Coral101 () {
       </div>
       <br></br>
       <div className='content'>
-        <button type="button">START ID!</button>
+        <Link to='/coral-id'><button type="button">START ID!</button></Link>
       </div>
       <br></br>
       <div className='content'>
@@ -27,7 +29,6 @@ function Coral101 () {
             <img className='info-image' src='/images/lifestyle_solitary.png'/>
             <div className='overlay-text content'>Solitary = coral that lives their entire life as a single polyp</div>
           </div>
-
         </div>
 
         <div className='flex-child'>

@@ -6,6 +6,7 @@ import Home from './Home'
 import Coral101 from './Coral101'
 import Fish101 from './Fish101'
 import Bleaching101 from './Bleaching101'
+import CoralID from './CoralID'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <br></br>
       <Route exact path='/' component={Home} />
       <Route path='/coral-id-101' component={Coral101} />
+      <Route path='/coral-id' component={CoralID} />
       <Route path='/fish-id-101' component={Fish101} />
       <Route path='/bleaching-101' component={Bleaching101} />
     </>
