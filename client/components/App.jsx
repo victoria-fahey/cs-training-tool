@@ -1,4 +1,5 @@
 import React from 'react'
+import { Route } from 'react-router-dom'
 
 import Navbar from './Navbar'
 import Home from './Home'
@@ -6,9 +7,9 @@ import Home from './Home'
 const App = () => {
   return (
     <>
-      <Navbar />
-      <br/>
-      <Home />
+      <Route path = '/' component={Navbar} />
+      <br></br>
+      <Route exact path = '/' component={Home} />
     </>
   )
 }
