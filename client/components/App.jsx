@@ -12,6 +12,7 @@ const App = () => {
     <>
       <Route path='/' component={Navbar} />
       <br></br>
+      <br></br>
       <Route exact path='/' component={Home} />
       <Route path='/coral-id-101' component={Coral101} />
       <Route path='/fish-id-101' component={Fish101} />

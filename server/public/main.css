@@ -319,24 +319,14 @@ input[type="button"]:hover {
   /* Larger than Desktop HD */
   @media (min-width: 1200px) {}
 
-  /* styles I've added */
-
-.title {
-    text-align: center;
-}
-
-.content {
-    text-align: center;
-}
-
 /* NAVBAR STYLING STARTS */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   background-color: #011e40;
   color: #fff;
+
  }
  /* LOGO */
  .logo img{
@@ -349,4 +339,58 @@ input[type="button"]:hover {
   gap: 1em;
   font-size: x-large;
   padding: 5px;
+  background-color: #011e40;
  }
+
+/* styles I've added */
+
+.title {
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  text-align: center;
+}
+
+.flex-child {
+  flex: 1
+}
+
+.info-image {
+  object-fit: cover;
+  width: 400px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+.overlay-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #3a4a58;
+  font-size: xx-large;
+  backface-visibility: hidden;
+}
+.container:hover .overlay-text {
+opacity: 1;
+}
+
+.container:hover .info-image {
+  opacity: 0.4;
+}
