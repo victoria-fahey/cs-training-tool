@@ -6,6 +6,7 @@ exports.up = function (knex) {
     table.string('lifestyle')
     table.string('growthForm')
     table.string('coralliteWall')
+    table.string('info')
   })
 }
 
