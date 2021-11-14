@@ -3,5 +3,10 @@ const config = require('./knexfile')[environment]
 const connection = require('knex')(config)
 
 module.exports = {
+  getCorals
+}
 
+function getCorals (db = connection) {
+  return db('corals')
+    .select()
 }
