@@ -6,7 +6,7 @@ function Home () {
       <div className='title'>
         <h1>Coral Reef Monitoring Training Tool</h1>
         <br/>
-        <img src="/images/banner.png" />
+        <img id='banner' src="/images/banner.png" />
       </div>
       <div className='content'>
         <br/>
