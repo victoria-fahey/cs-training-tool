@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { getCorals } from '../apiClient'
 
 function CoralID () {
-  const [filteredCoral, setFilteredCoral] = useState([{ image: '' }])
+  const [filteredCoral, setFilteredCoral] = useState([{}])
   const { id } = useParams()
 
   useEffect(() => {
@@ -21,7 +21,7 @@ function CoralID () {
   return (
     <>
       <div className='title'>
-        <h1> Who am I?</h1>
+        <h1>Who am I?</h1>
       </div>
       <br></br>
       <div className='content'>
