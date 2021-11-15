@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 
 function Coral101 () {
@@ -10,7 +9,7 @@ function Coral101 () {
       </div>
       <br></br>
       <div className='content'>
-        <Link to='/coral-id'><button type="button">START ID!</button></Link>
+        <Link to={'/coral-id/1'}><button type="button">START ID!</button></Link>
       </div>
       <br></br>
       <div className='content'>

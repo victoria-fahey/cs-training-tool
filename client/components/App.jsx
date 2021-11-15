@@ -16,7 +16,7 @@ const App = () => {
       <br></br>
       <Route exact path='/' component={Home} />
       <Route path='/coral-id-101' component={Coral101} />
-      <Route path='/coral-id' component={CoralID} />
+      <Route path='/coral-id/:id' component={CoralID} />
       <Route path='/fish-id-101' component={Fish101} />
       <Route path='/bleaching-101' component={Bleaching101} />
     </>

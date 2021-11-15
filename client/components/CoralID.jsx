@@ -1,6 +1,23 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+
+import { getCorals } from '../apiClient'
 
 function CoralID () {
+  const [filteredCoral, setFilteredCoral] = useState([{ image: '' }])
+  const { id } = useParams()
+
+  useEffect(() => {
+    getCorals()
+      .then(coralData => {
+        setFilteredCoral(coralData.filter((coral) => coral.id === Number(id)))
+        return null
+      })
+      .catch(err => {
+        console.error(err.message)
+      })
+  }, [])
+
   return (
     <>
       <div className='title'>
@@ -14,7 +31,7 @@ function CoralID () {
       </div>
       <div className='flex-container'>
         <div className='coral-flex-child'>
-          <img className='coral-id-image' src='images/diplo.png'/>
+          <img className='coral-id-image' src={filteredCoral[0].image}/>
           <div className='li-not-center'>
             <p>Reminders:</p>
             <ul className='li-not-center'>
