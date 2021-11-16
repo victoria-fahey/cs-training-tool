@@ -6,6 +6,8 @@ import { getCorals } from '../apiClient'
 function CoralID () {
   const [filteredCoral, setFilteredCoral] = useState([{}])
   const { id } = useParams()
+  const [correctCoral, setCorrectCoral] = useState([{}])
+  // const correctCoral = filteredCoral.genus === Number(id)
 
   useEffect(() => {
     getCorals()
@@ -17,6 +19,26 @@ function CoralID () {
         console.error(err.message)
       })
   }, [])
+
+  function handleChange (event) {
+    if (event.target.value === filteredCoral[0].genus) {
+      console.log('match')
+    } else {
+      console.log('no match')
+    }
+    // console.log(event.target.value)
+
+    // this.state = {
+    //   selectedCoral: filteredCoral.genus
+    // }
+    // setCorrectCoral(event.target.value)
+
+    // if (event.target.value === filteredCoral.genus) {
+    //   console.log('match')
+    // } else {
+    //   console.log('no match')
+    // }
+  }
 
   return (
     <>
@@ -45,52 +67,52 @@ function CoralID () {
         <div className='coral-flex-child'>
           <div>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Acropora"/>
               <div className="rad-design"></div>
               <div className="rad-text">Acropora</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Porites"/>
               <div className="rad-design"></div>
               <div className="rad-text">Porites</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Diploastrea"/>
               <div className="rad-design"></div>
               <div className="rad-text">Diploastrea</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Favia</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Fungia</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Pachyseris</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Lobophyllia</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Goniopora</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Favites</div>
             </label>
             <label className="rad-label">
-              <input type="radio" className="rad-input" name="rad"/>
+              <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value={filteredCoral.genus}/>
               <div className="rad-design"></div>
               <div className="rad-text">Pocillopora</div>
             </label>
