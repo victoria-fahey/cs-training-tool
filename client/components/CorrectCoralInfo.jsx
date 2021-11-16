@@ -7,13 +7,13 @@ function CorrectCoralInfo (props) {
     <>
       <div className='coral-flex-child'>
         <h1>{filteredCoral[0].genus}</h1>
-        <h3 className="coral-info">Lifestyle</h3>
+        <h4 className="coral-info">Lifestyle</h4>
         <p className="coral-info">{filteredCoral[0].lifestyle}</p>
-        <h3>Growth Form</h3>
+        <h4>Growth Form</h4>
         <p>{filteredCoral[0].growthForm}</p>
-        <h3>Corallite Walls</h3>
+        <h4>Corallite Walls</h4>
         <p>{filteredCoral[0].coralliteWall}</p>
-        <h3>Additional Info</h3>
+        <h4>Additional Info</h4>
         <p>{filteredCoral[0].info}</p>
         <br></br>
         <button type="button">Next Image</button>
