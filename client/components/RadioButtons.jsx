@@ -37,9 +37,9 @@ function RadioButtons (props) {
             <div className="rad-text">Pachyseris</div>
           </label>
           <label className="rad-label">
-            <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Lobophyllia"/>
+            <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Platygyra"/>
             <div className="rad-design"></div>
-            <div className="rad-text">Lobophyllia</div>
+            <div className="rad-text">Platygyra</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Goniopora"/>
