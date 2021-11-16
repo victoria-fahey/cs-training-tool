@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import { getCorals } from '../apiClient'
 
+import CorrectCoralInfo from './CorrectCoralInfo'
 import RadioButtons from './RadioButtons'
 
 function CoralID () {
@@ -54,7 +55,7 @@ function CoralID () {
             </ul>
           </div>
         </div>
-        {correctCoral || <RadioButtons handleChange={handleChange}/> }
+        {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral}/> : <RadioButtons handleChange={handleChange}/> }
       </div>
     </>
   )
