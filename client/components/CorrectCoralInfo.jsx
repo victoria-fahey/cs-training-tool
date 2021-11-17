@@ -1,7 +1,14 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
+  const history = useHistory()
+
+  function handleClick () {
+    history.push(`/coral-id/${filteredCoral[0].id + 1}`)
+    // how do you know when you are at the last coral
+  }
 
   return (
     <>
@@ -16,7 +23,7 @@ function CorrectCoralInfo (props) {
         <h4>Additional Info</h4>
         <p>{filteredCoral[0].info}</p>
         <br></br>
-        <button type="button">Next Image</button>
+        <button type="button" onClick={handleClick}>Next Image</button>
       </div>
     </>
   )

@@ -20,7 +20,7 @@ function CoralID () {
       .catch(err => {
         console.error(err.message)
       })
-  }, [])
+  }, [id])
 
   function handleChange (event) {
     if (event.target.value === filteredCoral[0].genus) {
