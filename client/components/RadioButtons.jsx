@@ -56,8 +56,6 @@ function RadioButtons (props) {
             <div className="rad-design"></div>
             <div className="rad-text">Pocillopora</div>
           </label>
-          <br></br>
-          {/* <button type="button">Next Image</button> */}
         </div>
       </div>
     </>

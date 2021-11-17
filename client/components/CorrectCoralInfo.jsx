@@ -3,10 +3,13 @@ import { useHistory } from 'react-router-dom'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
+  const { handleChange } = props
+  const { setCorrectCoral } = props
   const history = useHistory()
 
   function handleClick () {
     history.push(`/coral-id/${filteredCoral[0].id + 1}`)
+    handleChange(setCorrectCoral(false))
     // how do you know when you are at the last coral
   }
 

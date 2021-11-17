@@ -55,7 +55,7 @@ function CoralID () {
             </ul>
           </div>
         </div>
-        {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral}/> : <RadioButtons handleChange={handleChange}/> }
+        {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange}/> }
       </div>
     </>
   )
