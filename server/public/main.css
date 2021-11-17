@@ -403,11 +403,9 @@ opacity: 1;
 .rad-label {
   display: flex;
   align-items: center;
-
   border-radius: 100px;
-  padding: 14px 16px;
+  padding: 7px 16px;
   margin: 10px 0;
-
   cursor: pointer;
   transition: .3s;
 }
@@ -487,7 +485,8 @@ opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* CORAL INFO PAGE STYLING */
-/* .coral-info p, h3 {
-  display: inline-block;
-} */
+/* WRONG CORAL COLOUR  */
+.wrongCoral {
+  color: #D62839
+}
+
