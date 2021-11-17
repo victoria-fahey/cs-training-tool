@@ -30,7 +30,7 @@ function CorrectCoralInfo (props) {
         <h4>Additional Info</h4>
         <p>{filteredCoral[0].info}</p>
         <br></br>
-        <button type="button" onClick={handleClick} className={setCorrectCoral(false) }>Next Image</button>
+        <button type="button" onClick={handleClick}>Next Image</button>
       </div>
     </>
   )
