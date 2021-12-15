@@ -1,4 +1,5 @@
 const path = require('path')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: path.join(__dirname, 'index.js'),
@@ -7,6 +8,13 @@ module.exports = {
     filename: 'bundle.js'
   },
   mode: 'development',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'styles.css',
+      chunkFilename: '[id].css',
+      ignoreOrder: false // Enable to remove warnings about conflicting order
+    })
+  ],
   module: {
     rules: [{
       test: /\.jsx?$/,
