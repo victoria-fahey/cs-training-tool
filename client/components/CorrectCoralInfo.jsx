@@ -1,14 +1,14 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
   const { handleChange } = props
   const { setCorrectCoral } = props
-  const history = useHistory()
+  const navigate = useNavigate()
 
   function handleClick () {
-    history.push(`/coral-id/${filteredCoral[0].id + 1}`)
+    navigate.push(`/coral-id/${filteredCoral[0].id + 1}`)
     handleChange(setCorrectCoral(false))
     // handleLastCoral()
   }
