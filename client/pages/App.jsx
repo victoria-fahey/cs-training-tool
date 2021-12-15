@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-import Navbar from './Navbar'
+import Navbar from '../components/Navbar'
 import Home from './Home'
 import Coral101 from './Coral101'
 import Fish101 from './Fish101'
 import Bleaching101 from './Bleaching101'
-import CoralID from './CoralID'
+import CoralID from '../components/CoralID'
 
 const App = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { getCorals } from '../apiClient'
+import { getCorals } from '../api/apiClient'
 
 import CorrectCoralInfo from './CorrectCoralInfo'
 import RadioButtons from './RadioButtons'
