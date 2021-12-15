@@ -10,7 +10,7 @@ module.exports = {
   mode: 'development',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'styles.css',
+      filename: 'main.css',
       chunkFilename: '[id].css',
       ignoreOrder: false // Enable to remove warnings about conflicting order
     })
