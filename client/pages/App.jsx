@@ -8,11 +8,11 @@ import Fish101 from './Fish101'
 import Bleaching101 from './Bleaching101'
 import CoralID from '../components/CoralID'
 
-const App = () => {
+function App () {
   return (
     <>
+      <Navbar />
       <Routes>
-        <Navbar />
         {/* <Route path='/' element={<Navbar />} />
         <br></br>
         <br></br> */}
