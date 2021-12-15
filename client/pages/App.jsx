@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
 import Home from './Home'
@@ -11,14 +11,17 @@ import CoralID from '../components/CoralID'
 const App = () => {
   return (
     <>
-      <Route path='/' component={Navbar} />
-      <br></br>
-      <br></br>
-      <Route exact path='/' component={Home} />
-      <Route path='/coral-id-101' component={Coral101} />
-      <Route path='/coral-id/:id' component={CoralID} />
-      <Route path='/fish-id-101' component={Fish101} />
-      <Route path='/bleaching-101' component={Bleaching101} />
+      <Routes>
+        <Navbar />
+        {/* <Route path='/' element={<Navbar />} />
+        <br></br>
+        <br></br> */}
+        <Route path='/' element={<Home />} />
+        <Route path='/coral-id-101' element={<Coral101 />} />
+        <Route path='/coral-id/:id' element={<CoralID />} />
+        <Route path='/fish-id-101' element={<Fish101 />} />
+        <Route path='/bleaching-101' element={<Bleaching101 />} />
+      </Routes>
     </>
   )
 }
