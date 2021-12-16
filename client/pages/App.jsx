@@ -12,10 +12,8 @@ function App () {
   return (
     <>
       <Navbar />
+      <br/>
       <Routes>
-        {/* <Route path='/' element={<Navbar />} />
-        <br></br>
-        <br></br> */}
         <Route path='/' element={<Home />} />
         <Route path='/coral-id-101' element={<Coral101 />} />
         <Route path='/coral-id/:id' element={<CoralID />} />

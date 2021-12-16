@@ -1,18 +1,24 @@
 import React from 'react'
+import { Heading, Image, Container, Text } from '@chakra-ui/react'
 
 function Home () {
   return (
     <>
-      <div className='title'>
-        <h1>Coral Reef Monitoring Training Tool</h1>
+      <Container maxW='auto' centerContent bg='brand.100'>
+        <Heading as='h1' size='2xl' color='brand.blue'>
+          Coral Reef Monitoring Training Tool
+        </Heading>
         <br/>
-        <img id='banner' src="/images/banner.png" />
-      </div>
-      <div className='content'>
+        <Image id='banner' src="/images/banner.png" />
         <br/>
-        <h2>Blurb about coral reefs</h2>
-        <p>Coral reefs are important...</p>
-      </div>
+        <Heading as='h2' size='xl' color='brand.blue'>
+        Blurb about coral reefs
+        </Heading>
+        <br/>
+        <Text fontSize='2xl' color='brand.teal'>
+          Coral reefs are important...
+        </Text>
+      </Container>
     </>
   )
 }
