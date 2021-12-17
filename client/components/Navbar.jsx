@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, Box, Flex, HStack, Image } from '@chakra-ui/react'
+import { Link, Box, Flex, HStack, Image, Spacer } from '@chakra-ui/react'
 import { Link as RouteLink } from 'react-router-dom'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
@@ -21,6 +21,7 @@ const Navbar = () => {
                 h='80px'
                 w='auto' />
             </Box>
+            <Spacer />
             <HStack
               as={'nav'}
               spacing={4}
