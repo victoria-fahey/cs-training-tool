@@ -13,7 +13,7 @@ const theme = extendTheme({
     brand: {
       blue: '#011e40', // dark blue
       teal: '#3a4a58', // teal
-      100: 'white'
+      white: 'white'
     }
   }
 
