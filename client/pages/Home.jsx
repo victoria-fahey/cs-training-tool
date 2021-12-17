@@ -6,8 +6,7 @@ function Home () {
     <>
       <Container
         maxW='auto'
-        centerContent
-        bg='brand.100'>
+        centerContent>
         <Heading
           as='h1'
           size='2xl'
@@ -15,9 +14,11 @@ function Home () {
           Coral Reef Monitoring Training Tool
         </Heading>
         <br/>
+        <br/>
         <Box>
           <Image id='banner' src="/images/banner.png" />
         </Box>
+        <br/>
         <br/>
         <Heading
           as='h2'

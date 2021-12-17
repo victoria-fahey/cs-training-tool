@@ -13,6 +13,7 @@ function App () {
     <>
       <Navbar />
       <br/>
+      <br/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/coral-id-101' element={<Coral101 />} />
