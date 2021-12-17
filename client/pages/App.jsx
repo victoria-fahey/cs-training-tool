@@ -7,6 +7,7 @@ import Coral101 from './Coral101'
 import Fish101 from './Fish101'
 import Bleaching101 from './Bleaching101'
 import CoralID from '../components/CoralID'
+import Footer from '../components/Footer'
 
 function App () {
   return (
@@ -21,6 +22,8 @@ function App () {
         <Route path='/fish-id-101' element={<Fish101 />} />
         <Route path='/bleaching-101' element={<Bleaching101 />} />
       </Routes>
+      <br/>
+      <Footer />
     </>
   )
 }
