@@ -9,8 +9,8 @@ import theme from './styles/CustomTheme'
 document.addEventListener('DOMContentLoaded', () => {
   render(
     <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <BrowserRouter>
+        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <App />
       </BrowserRouter>
     </ChakraProvider>,
