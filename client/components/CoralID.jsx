@@ -53,7 +53,7 @@ function CoralID () {
         <CoralModal />
       </Container>
       <br/>
-      <SimpleGrid columns={2} px={10}>
+      <SimpleGrid columns={2} px={10} spacing={10}>
         <Center>
           <Box>
             <Image className='coral-id-image' src={filteredCoral[0].image}/>
