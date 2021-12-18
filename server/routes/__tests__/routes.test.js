@@ -1,7 +1,7 @@
 import request from 'supertest'
 
-import server from '../server'
-import { getCorals } from '../db/db'
+import server from '../../server'
+import { getCorals } from '../../db/db'
 
 jest.mock('../db/db')
 

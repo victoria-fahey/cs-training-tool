@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import { Box, Center, Container, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
 
-import { getCorals } from '../apiClient'
+import { getCorals } from '../api/apiClient'
 
 import CorrectCoralInfo from './CorrectCoralInfo'
 import RadioButtons from './RadioButtons'
+import CoralModal from './CoralModal'
 
 function CoralID () {
   const [filteredCoral, setFilteredCoral] = useState([{}])
@@ -34,29 +36,35 @@ function CoralID () {
 
   return (
     <>
-      <div className='title'>
-        <h1>Who am I?</h1>
-      </div>
-      <br></br>
-      <div className='content'>
-        <p>
+      <Container maxW='auto' centerContent>
+        <Heading
+          as='h1'
+          size='2xl'
+          color='brand.blue'>
+          Who am I?
+        </Heading>
+        <br/>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'>
             Choose the correct coral
-        </p>
-      </div>
-      <div className='flex-container'>
-        <div className='coral-flex-child'>
-          <img className='coral-id-image' src={filteredCoral[0].image}/>
-          <div className='li-not-center'>
-            <p>Reminders:</p>
-            <ul className='li-not-center'>
-              <li>Growth form?</li>
-              <li>Are the walls shared, separate, meandering or have no walls?</li>
-              <li>Axial corallite?</li>
-            </ul>
-          </div>
-        </div>
-        {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange}/> }
-      </div>
+        </Text>
+        <br/>
+        <CoralModal />
+      </Container>
+      <br/>
+      <SimpleGrid columns={2} px={10} spacing={10}>
+        <Center>
+          <Box>
+            <Image className='coral-id-image' src={filteredCoral[0].image}/>
+          </Box>
+        </Center>
+        <Center>
+          <Box>
+            {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange}/> }
+          </Box>
+        </Center>
+      </SimpleGrid>
     </>
   )
 }

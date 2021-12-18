@@ -1,37 +1,85 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { Button, Container, Heading, Text } from '@chakra-ui/react'
+
+// TODO: handle last coral
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
   const { handleChange } = props
   const { setCorrectCoral } = props
-  const history = useHistory()
+  const navigate = useNavigate()
 
   function handleClick () {
-    history.push(`/coral-id/${filteredCoral[0].id + 1}`)
+    navigate(`/coral-id/${filteredCoral[0].id + 1}`)
     handleChange(setCorrectCoral(false))
     // handleLastCoral()
   }
 
-  // how do you know when you are at the last coral
-  // function handleLastCoral () {
-  // }
-
   return (
     <>
-      <div className='coral-flex-child'>
-        <h1>{filteredCoral[0].genus}</h1>
-        <h4 className="coral-info">Lifestyle</h4>
-        <p className="coral-info">{filteredCoral[0].lifestyle}</p>
-        <h4>Growth Form</h4>
-        <p>{filteredCoral[0].growthForm}</p>
-        <h4>Corallite Walls</h4>
-        <p>{filteredCoral[0].coralliteWall}</p>
-        <h4>Additional Info</h4>
-        <p>{filteredCoral[0].info}</p>
-        <br></br>
-        <button type="button" onClick={handleClick}>Next Image</button>
-      </div>
+      <Container maxW='auto' centerContent>
+        <Heading
+          as='h1'
+          size='3xl'
+          color='brand.blue'>
+          {filteredCoral[0].genus}
+        </Heading>
+        <br/>
+        <Heading
+          as='h5'
+          color='brand.blue'>
+            Lifestyle
+        </Heading>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'>
+          {filteredCoral[0].lifestyle}
+        </Text>
+        <br/>
+        <Heading
+          as='h5'
+          color='brand.blue'>
+            Growth Form
+        </Heading>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'>
+          {filteredCoral[0].growthForm}
+        </Text>
+        <br/>
+        <Heading
+          as='h5'
+          color='brand.blue'>
+            Corallite Walls
+        </Heading>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'
+          align='center'>
+          {filteredCoral[0].coralliteWall}
+        </Text>
+        <br/>
+        <Heading
+          as='h5'
+          color='brand.blue'>
+            Additional Info
+        </Heading>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'
+          align='center'>
+          {filteredCoral[0].info}
+        </Text>
+        <br/>
+        <Button
+          bg='brand.blue'
+          color='brand.white'
+          size='md'
+          onClick={handleClick}>
+          Next Image
+        </Button>
+      </Container>
     </>
   )
 }
