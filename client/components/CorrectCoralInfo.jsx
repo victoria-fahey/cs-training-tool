@@ -2,18 +2,18 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Container, Heading, Text } from '@chakra-ui/react'
 
-// TODO: handle last coral
+import LastCoralButton from './LastCoralButton'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
   const { handleChange } = props
   const { setCorrectCoral } = props
   const navigate = useNavigate()
+  const lastCoral = filteredCoral[0].id === 9
 
   function handleClick () {
     navigate(`/coral-id/${filteredCoral[0].id + 1}`)
     handleChange(setCorrectCoral(false))
-    // handleLastCoral()
   }
 
   return (
@@ -72,13 +72,16 @@ function CorrectCoralInfo (props) {
           {filteredCoral[0].info}
         </Text>
         <br/>
-        <Button
-          bg='brand.blue'
-          color='brand.white'
-          size='md'
-          onClick={handleClick}>
+
+        {lastCoral
+          ? <LastCoralButton />
+          : <Button
+            bg='brand.blue'
+            color='brand.white'
+            size='md'
+            onClick={handleClick}>
           Next Image
-        </Button>
+          </Button>}
       </Container>
     </>
   )
