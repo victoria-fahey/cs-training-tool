@@ -73,9 +73,12 @@ opacity: 1;
   width: 22px;
   height: 22px;
   border-radius: 100px;
-
-  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
   position: relative;
+}
+
+.rightCoral {
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+  transition: .3s;
 }
 
 .rad-design::before {
@@ -89,6 +92,13 @@ opacity: 1;
   background: hsl(0, 0%, 90%);
   transform: scale(1.1);
   transition: .3s;
+}
+
+/* WRONG CORAL COLOUR  */
+.wrongCoral {
+  /* background: #D62839 */
+  background-color: #f71735;
+  background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
 }
 
 .rad-input:checked+.rad-design::before {
@@ -120,17 +130,10 @@ opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* .li-not-center {
-  text-align: left;
-} */
-
 /* box shadow on BANNER IMAGE IN HOME */
 #banner {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* WRONG CORAL COLOUR  */
-.wrongCoral {
-  color: #D62839
-}
+
 
