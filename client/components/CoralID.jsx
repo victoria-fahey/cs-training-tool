@@ -27,10 +27,8 @@ function CoralID () {
   function handleChange (event) {
     if (event.target.value === filteredCoral[0].genus) {
       setCorrectCoral(true)
-      console.log('match')
     } else {
       setCorrectCoral(false)
-      console.log('no match')
     }
   }
 
@@ -61,7 +59,7 @@ function CoralID () {
         </Center>
         <Center>
           <Box>
-            {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange}/> }
+            {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange} correctCoral={correctCoral} /> }
           </Box>
         </Center>
       </SimpleGrid>
