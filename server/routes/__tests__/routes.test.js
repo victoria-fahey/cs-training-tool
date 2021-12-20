@@ -3,7 +3,7 @@ import request from 'supertest'
 import server from '../../server'
 import { getCorals } from '../../db/db'
 
-jest.mock('../db/db')
+jest.mock('../../db/db')
 
 describe('GET /cs-training', () => {
   it('routes get corals & responds with corals array on getCorals success', () => {
