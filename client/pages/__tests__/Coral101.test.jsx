@@ -8,7 +8,11 @@ require('@testing-library/jest-dom')
 
 describe('<Coral101 />', () => {
   beforeEach(() => {
-    render(<Router><Coral101 /></Router>)
+    render(
+      <Router>
+        <Coral101 />
+      </Router>
+    )
   })
   it('renders correct headings', () => {
     const headings = screen.getAllByRole('heading')

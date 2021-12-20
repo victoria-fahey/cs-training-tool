@@ -8,7 +8,11 @@ require('@testing-library/jest-dom')
 
 describe('<Home />', () => {
   beforeEach(() => {
-    render(<Router><Home /></Router>)
+    render(
+      <Router>
+        <Home />
+      </Router>
+    )
   })
   it('renders correct headings', () => {
     const headings = screen.getAllByRole('heading')

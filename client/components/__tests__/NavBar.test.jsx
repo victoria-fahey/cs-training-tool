@@ -8,7 +8,11 @@ require('@testing-library/jest-dom')
 
 describe('<NavBar />', () => {
   beforeEach(() => {
-    render(<Router><Navbar /></Router>)
+    render(
+      <Router>
+        <Navbar />
+      </Router>
+    )
   })
   it('renders logo correctly', () => {
     const logo = screen.getByRole('img')
