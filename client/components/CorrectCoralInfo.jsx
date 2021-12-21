@@ -21,10 +21,10 @@ function CorrectCoralInfo (props) {
         <Heading
           as='h1'
           size='3xl'
-          color='brand.blue'>
+          color='brand.blue'
+          pb={5}>
           {filteredCoral[0].genus}
         </Heading>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -32,10 +32,10 @@ function CorrectCoralInfo (props) {
         </Heading>
         <Text
           fontSize='2xl'
-          color='brand.teal'>
+          color='brand.teal'
+          pb={5}>
           {filteredCoral[0].lifestyle}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -43,10 +43,10 @@ function CorrectCoralInfo (props) {
         </Heading>
         <Text
           fontSize='2xl'
-          color='brand.teal'>
+          color='brand.teal'
+          pb={5}>
           {filteredCoral[0].growthForm}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -55,10 +55,10 @@ function CorrectCoralInfo (props) {
         <Text
           fontSize='2xl'
           color='brand.teal'
-          align='center'>
+          align='center'
+          pb={5}>
           {filteredCoral[0].coralliteWall}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -67,10 +67,10 @@ function CorrectCoralInfo (props) {
         <Text
           fontSize='2xl'
           color='brand.teal'
-          align='center'>
+          align='center'
+          pb={5}>
           {filteredCoral[0].info}
         </Text>
-        <br/>
 
         {lastCoral
           ? <LastCoralButton />
