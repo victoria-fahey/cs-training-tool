@@ -6,7 +6,7 @@ import CoralModal from '../CoralModal'
 
 require('@testing-library/jest-dom')
 
-describe('CoralModal', () => {
+describe('<CoralModal />', () => {
   beforeEach(() => {
     render(
       <Router>
