@@ -22,6 +22,7 @@ const Navbar = () => {
                 w='auto' />
             </Box>
             <Spacer />
+            <Spacer />
             <HStack
               as={'nav'}
               spacing={4}

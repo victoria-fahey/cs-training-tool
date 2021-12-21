@@ -27,32 +27,30 @@ function CoralID () {
   function handleChange (event) {
     if (event.target.value === filteredCoral[0].genus) {
       setCorrectCoral(true)
-      console.log('match')
     } else {
       setCorrectCoral(false)
-      console.log('no match')
     }
   }
 
   return (
     <>
-      <Container maxW='auto' centerContent>
+      <Container maxW='auto' pb={5} centerContent>
         <Heading
           as='h1'
           size='2xl'
+          pb={10}
           color='brand.blue'>
           Who am I?
         </Heading>
-        <br/>
         <Text
           fontSize='2xl'
-          color='brand.teal'>
+          color='brand.teal'
+          pb={5}>
             Choose the correct coral
         </Text>
-        <br/>
         <CoralModal />
       </Container>
-      <br/>
+
       <SimpleGrid columns={2} px={10} spacing={10}>
         <Center>
           <Box>
@@ -61,7 +59,7 @@ function CoralID () {
         </Center>
         <Center>
           <Box>
-            {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange}/> }
+            {correctCoral ? <CorrectCoralInfo filteredCoral={filteredCoral} setCorrectCoral={setCorrectCoral}/> : <RadioButtons handleChange={handleChange} correctCoral={correctCoral} /> }
           </Box>
         </Center>
       </SimpleGrid>

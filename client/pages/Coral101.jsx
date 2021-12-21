@@ -5,15 +5,20 @@ import { Container, Heading, Link, Button, Text } from '@chakra-ui/react'
 function Coral101 () {
   return (
     <>
-      <Container maxW='auto' centerContent>
+      <Container maxW='auto' pb={10} centerContent>
         <Heading
           as='h1'
           size='2xl'
+          pb={10}
           color='brand.blue'>
           Coral Identification 101
         </Heading>
-        <br/>
-        <br/>
+        <Text
+          fontSize='2xl'
+          color='brand.teal'
+          pb={5}>
+            Hover over an image for basic coral anatomy to help you identify coral
+        </Text>
         <Link as={RouteLink} to={'/coral-id/1'}
           rounded={'md'}
           _hover={{
@@ -27,15 +32,7 @@ function Coral101 () {
             START ID!
           </Button>
         </Link>
-        <br />
-        <Text
-          fontSize='2xl'
-          color='brand.teal'>
-            Hover over an image for basic coral anatomy to help you identify coral
-        </Text>
       </Container>
-      <br/>
-      <br/>
       <Container maxW='auto' centerContent>
         <div className='flex-container'>
           <div className='flex-child'>

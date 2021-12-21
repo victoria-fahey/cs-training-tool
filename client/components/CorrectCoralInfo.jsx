@@ -2,18 +2,17 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, Container, Heading, Text } from '@chakra-ui/react'
 
-// TODO: handle last coral
+import LastCoralButton from './LastCoralButton'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
-  const { handleChange } = props
   const { setCorrectCoral } = props
   const navigate = useNavigate()
+  const lastCoral = filteredCoral[0].id === 9
 
   function handleClick () {
     navigate(`/coral-id/${filteredCoral[0].id + 1}`)
-    handleChange(setCorrectCoral(false))
-    // handleLastCoral()
+    setCorrectCoral(false)
   }
 
   return (
@@ -22,10 +21,10 @@ function CorrectCoralInfo (props) {
         <Heading
           as='h1'
           size='3xl'
-          color='brand.blue'>
+          color='brand.blue'
+          pb={5}>
           {filteredCoral[0].genus}
         </Heading>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -33,10 +32,10 @@ function CorrectCoralInfo (props) {
         </Heading>
         <Text
           fontSize='2xl'
-          color='brand.teal'>
+          color='brand.teal'
+          pb={5}>
           {filteredCoral[0].lifestyle}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -44,10 +43,10 @@ function CorrectCoralInfo (props) {
         </Heading>
         <Text
           fontSize='2xl'
-          color='brand.teal'>
+          color='brand.teal'
+          pb={5}>
           {filteredCoral[0].growthForm}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -56,10 +55,10 @@ function CorrectCoralInfo (props) {
         <Text
           fontSize='2xl'
           color='brand.teal'
-          align='center'>
+          align='center'
+          pb={5}>
           {filteredCoral[0].coralliteWall}
         </Text>
-        <br/>
         <Heading
           as='h5'
           color='brand.blue'>
@@ -68,17 +67,20 @@ function CorrectCoralInfo (props) {
         <Text
           fontSize='2xl'
           color='brand.teal'
-          align='center'>
+          align='center'
+          pb={5}>
           {filteredCoral[0].info}
         </Text>
-        <br/>
-        <Button
-          bg='brand.blue'
-          color='brand.white'
-          size='md'
-          onClick={handleClick}>
+
+        {lastCoral
+          ? <LastCoralButton />
+          : <Button
+            bg='brand.blue'
+            color='brand.white'
+            size='md'
+            onClick={handleClick}>
           Next Image
-        </Button>
+          </Button>}
       </Container>
     </>
   )

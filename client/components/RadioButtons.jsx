@@ -2,58 +2,80 @@ import React from 'react'
 
 function RadioButtons (props) {
   const { handleChange } = props
+  const { correctCoral } = props
+
   return (
     <>
       <div className='coral-flex-child'>
         <div>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Acropora"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Acropora</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Porites"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Porites</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Diploastrea"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Diploastrea</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Favia"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Favia</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Fungia"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Fungia</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Pachyseris"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Pachyseris</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Platygyra"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Platygyra</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Goniopora"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Goniopora</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Favites"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Favites</div>
           </label>
           <label className="rad-label">
             <input type="radio" className="rad-input" name="coralChoice" onChange={handleChange} value="Pocillopora"/>
-            <div className="rad-design"></div>
+            {correctCoral
+              ? <div className="rad-design rightCoral"></div>
+              : <div className="rad-design wrongCoral"></div>}
             <div className="rad-text">Pocillopora</div>
           </label>
         </div>
