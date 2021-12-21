@@ -6,14 +6,13 @@ import LastCoralButton from './LastCoralButton'
 
 function CorrectCoralInfo (props) {
   const { filteredCoral } = props
-  const { handleChange } = props
   const { setCorrectCoral } = props
   const navigate = useNavigate()
   const lastCoral = filteredCoral[0].id === 9
 
   function handleClick () {
     navigate(`/coral-id/${filteredCoral[0].id + 1}`)
-    handleChange(setCorrectCoral(false))
+    setCorrectCoral(false)
   }
 
   return (
