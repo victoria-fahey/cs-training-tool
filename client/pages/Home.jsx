@@ -24,14 +24,47 @@ function Home () {
           as='h2'
           size='xl'
           color='brand.blue'>
-        Blurb about coral reefs
+        Coral reefs are{' '}
+          <Heading
+            as='span' className='gradient'>
+            important
+          </Heading>
         </Heading>
         <br/>
-        <Text
-          fontSize='2xl'
-          color='brand.teal'>
-          Coral reefs are important...
-        </Text>
+        <Box
+          maxW='70%'
+          align='center'>
+          <Text
+            fontSize='2xl'
+            color='brand.teal'>
+          Coral Reefs inhabit only 0.1% of the {"ocean's"} surface, paradoxically in nutrient poor waters. Yet they not only thrive, they manage to produce so much energy and shelter that 25% of all marine species find their home here.
+          </Text>
+          <br/>
+          <Text
+            fontSize='2xl'
+            className='gradient'>
+              Coral reefs are stunning, complex, vibrant and they are facing extinction all around the world.
+          </Text>
+          <br/>
+          <Text
+            fontSize='2xl'
+            color='brand.teal'>
+              Threatened by man made dangers, such as climate change, over-fishing, and marine pollution, it is probably only because of their astonishing capability for adaptation that still 25% of them are considered relatively unthreatened.
+          </Text>
+          <br/>
+          <Text
+            fontSize='2xl'
+            color='brand.teal'>
+              But the situation is deteriorating fast, and they will need all the help they can get.
+          </Text>
+          <br/>
+          <Heading
+            as='h2'
+            size='xl'
+            className='hashtag'>
+              #NotAllHopeIsGone
+          </Heading>
+        </Box>
       </Container>
     </>
   )
