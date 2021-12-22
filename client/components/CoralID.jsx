@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Box, Center, Container, Heading, Image, SimpleGrid, Text, Spinner } from '@chakra-ui/react'
+import { Box, Center, Container, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
 
 import { getCorals } from '../api/apiClient'
 
@@ -12,7 +12,6 @@ function CoralID () {
   const [filteredCoral, setFilteredCoral] = useState([{}])
   const { id } = useParams()
   const [correctCoral, setCorrectCoral] = useState(false)
-  const [imageLoaded, setImageLoaded] = useState(false)
 
   useEffect(() => {
     getCorals()
@@ -31,10 +30,6 @@ function CoralID () {
     } else {
       setCorrectCoral(false)
     }
-  }
-
-  function onLoad () {
-    setImageLoaded(true)
   }
 
   return (
@@ -59,18 +54,8 @@ function CoralID () {
       <SimpleGrid columns={2} px={10} spacing={10}>
         <Center>
           <Box>
-            <Image className='coral-id-image' src={filteredCoral[0].image} onLoad={onLoad} />
-
+            <Image className='coral-id-image' src={filteredCoral[0].image} />
           </Box>
-          {!imageLoaded &&
-            <Spinner
-              className='coral-id-image'
-              thickness='4px'
-              speed='0.65s'
-              emptyColor='gray.200'
-              color='blue.500'
-              size='xl'
-            />}
         </Center>
         <Center>
           <Box>
