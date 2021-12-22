@@ -1,5 +1,7 @@
 # COREsea Coral Reef Monitoring Training Tool 
 
+**Release 1 is live at:** https://cs-training-tool.herokuapp.com/
+
 This web application aims to provide an interactive training tool to help coral reef scientists/students with: 
 
 - Coral identification 
