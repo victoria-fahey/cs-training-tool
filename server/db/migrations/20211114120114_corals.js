@@ -5,8 +5,8 @@ exports.up = function (knex) {
     table.string('image')
     table.string('lifestyle')
     table.string('growthForm')
-    table.string('coralliteWall')
-    table.string('info')
+    table.text('coralliteWall')
+    table.text('info')
   })
 }
 
