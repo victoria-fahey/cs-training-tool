@@ -1,7 +1,6 @@
 import React from 'react'
-import { Container, Heading, Box } from '@chakra-ui/react'
-import { MdBuild } from 'react-icons/md'
-import { LoremIpsum } from 'react-lorem-ipsum'
+import { Container, Heading, Text, Link, Button, Box, Image } from '@chakra-ui/react'
+import { Link as RouteLink } from 'react-router-dom'
 
 function Fish101 () {
   return (
@@ -14,26 +13,33 @@ function Fish101 () {
           as='h1'
           size='2xl'
           color='brand.blue'
-          pb={5}>
-        UNDER CONSRUCTION!
-        </Heading>
-        <Heading
-          as='h1'
-          size='2xl'
-          color='brand.blue'
           pb={10}>
-          <MdBuild />
+            Fish Identification 101
         </Heading>
-        {LoremIpsum({ p: 3, random: false }).map((text, index) => (
-          <Box key={index}
-            fontSize='2xl'
-            color='brand.teal'
-            maxW='65%'
-            pb={5}
-            align='center'>
-            {text}
-          </Box>
-        ))}
+        <Text
+          fontSize='2xl'
+          color='brand.teal'
+          pb={5}>
+            Click button below to get straight into some fish ID
+        </Text>
+        <Link as={RouteLink} to={'/fish-id/1'}
+          rounded={'md'}
+          _hover={{
+            textDecoration: 'none',
+            opacity: 1
+          }}>
+          <Button
+            bg='brand.blue'
+            color='brand.white'
+            size='md'>
+            START ID!
+          </Button>
+        </Link>
+      </Container>
+      <Container maxW='auto' centerContent>
+        <Box >
+          <Image id='banner' src="/images/fish/fish_diversity.jpeg"/>
+        </Box>
       </Container>
     </>
   )
