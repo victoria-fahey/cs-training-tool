@@ -14,4 +14,15 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/fish', (req, res) => {
+  db.getFish()
+    .then(fish => {
+      res.json(fish)
+      return null
+    })
+    .catch(err => {
+      res.status(500).send(err.message)
+    })
+})
+
 module.exports = router
