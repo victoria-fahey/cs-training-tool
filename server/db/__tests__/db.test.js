@@ -24,3 +24,16 @@ describe('DB getCorals', () => {
       })
   })
 })
+
+describe('DB getFish', () => {
+  test('returns a correct array of fish objects', () => {
+    return db.getFish(testDb)
+      .then(fish => {
+        expect(fish).toHaveLength(44)
+        expect(fish[0]).toHaveProperty('family')
+        expect(fish[0].family).toBe('Angelfish')
+        expect(fish[0].image).toBe('/images/fish/6banded_angelfish.jpeg')
+        return null
+      })
+  })
+})
