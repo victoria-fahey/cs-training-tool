@@ -53,7 +53,7 @@ function FishID() {
             <SimpleGrid columns={2} px={10} spacing={10}>
                 <Center>
                     <Box>
-                        <Image className='coral-id-image' src={filteredFish[0].image} />
+                        <Image className='fish-id-image' src={filteredFish[0].image} />
                     </Box>
                 </Center>
                 <Center>
