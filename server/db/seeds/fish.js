@@ -125,7 +125,7 @@ exports.seed = function (knex) {
           id: 14,
           family: 'Parrotfish',
           species: 'Bluebarred Parrotfish - female',
-          image: 'images/fish/bluebarred_parrotfish_female',
+          image: 'images/fish/bluebarred_parrotfish_female.jpeg',
           sizeRange: '~ 46cm',
           morphology: 'Females are dull yellowish to orange-brown with irregular blue bars along its side. Known for their parrot-like beak used to scrape algae from coral and rocky substrate.',
           info: 'Herbivore. Parrotfish show sexual dimorphism, where males are usually very brightly coloured, whereas females are dull in colour. Can form shoals, or feeding packs with other Parrotfish or Rabbitfish. Can also form harems, where one male presides over several females and can aggressively assert this position against other males.'
