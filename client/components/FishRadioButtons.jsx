@@ -90,11 +90,11 @@ function FishRadioButtons(props) {
                         <input
                             type='radio' className='rad-input' name='fishChoice'
                             onChange={handleChange}
-                            value='Cardinalfish' />
+                            value='Cardinal fish' />
                         {correctFish
                             ? <div className='rad-design rightFish'></div>
                             : <div className='rad-design wrongFish'></div>}
-                        <div className='rad-text'>Cardinalfish</div>
+                        <div className='rad-text'>Cardinal fish</div>
                     </label>
 
                     <label className='rad-label'>
