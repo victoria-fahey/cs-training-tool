@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     })
 })
 
-router.get('/fish', (req, res) => {
+router.get('/fish-id/', (req, res) => {
   db.getFish()
     .then(fish => {
       res.json(fish)

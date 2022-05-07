@@ -1,7 +1,7 @@
 import request from 'superagent'
 
 const coralURL = '/cs-training/'
-const fishURL = '/cs-training/fish/'
+const fishURL = '/cs-training/fish-id/'
 
 export function getCorals() {
   return request
