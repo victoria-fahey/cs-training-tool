@@ -33,7 +33,7 @@ function CorrecFishInfo(props) {
                 </Heading>
                 <Text
                     fontSize='2xl'
-                    color='Background.teal'
+                    color='brand.teal'
                     pb={5}>
                     {filteredFish[0].species}
                 </Text>
@@ -45,7 +45,7 @@ function CorrecFishInfo(props) {
                 </Heading>
                 <Text
                     fontSize='2xl'
-                    color='Background.teal'
+                    color='brand.teal'
                     pb={5}>
                     {filteredFish[0].sizeRange}
                 </Text>
@@ -57,7 +57,7 @@ function CorrecFishInfo(props) {
                 </Heading>
                 <Text
                     fontSize='2xl'
-                    color='Background.teal'
+                    color='brand.teal'
                     pb={5}>
                     {filteredFish[0].morphology}
                 </Text>
@@ -69,7 +69,7 @@ function CorrecFishInfo(props) {
                 </Heading>
                 <Text
                     fontSize='2xl'
-                    color='Background.teal'
+                    color='brand.teal'
                     pb={5}>
                     {filteredFish[0].info}
                 </Text>
