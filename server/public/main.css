@@ -3,10 +3,17 @@
   display: flex;
   text-align: center;
 }
+
 .flex-child {
   flex: 1
 }
+
 .coral-flex-child {
+  flex: 2;
+  margin-right: 50px;
+}
+
+.fish-flex-child {
   flex: 2;
   margin-right: 50px;
 }
@@ -20,10 +27,12 @@
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .container {
   position: relative;
   width: 100%;
 }
+
 .overlay-text {
   transition: .5s ease;
   opacity: 0;
@@ -36,9 +45,11 @@
   font-size: xx-large;
   backface-visibility: hidden;
 }
+
 .container:hover .overlay-text {
-opacity: 1;
+  opacity: 1;
 }
+
 .container:hover .info-image {
   opacity: 0.4;
 }
@@ -81,6 +92,11 @@ opacity: 1;
   transition: .3s;
 }
 
+.rightFish {
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+  transition: .3s;
+}
+
 .rad-design::before {
   content: '';
 
@@ -97,6 +113,11 @@ opacity: 1;
 /* WRONG CORAL COLOUR  */
 .wrongCoral {
   /* background: #D62839 */
+  background-color: #f71735;
+  background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+}
+
+.wrongFish {
   background-color: #f71735;
   background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
 }
@@ -153,5 +174,3 @@ opacity: 1;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-
