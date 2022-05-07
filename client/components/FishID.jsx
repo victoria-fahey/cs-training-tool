@@ -5,6 +5,9 @@ import { Box, Center, Container, Heading, Image, SimpleGrid, Text } from '@chakr
 
 import { getFish } from '../api/apiClient'
 
+import CorrectFishInfo from './CorrectFishInfo'
+import FishRadioButtons from './FishRadioButtons'
+
 function FishID() {
     const [filteredFish, setFilteredFish] = useState([{}])
     const { id } = useParams()
@@ -28,6 +31,7 @@ function FishID() {
             setCorrectFish(false)
         }
     }
+
     return (
         <>
             <Container maxW='auto' pb={5} centerContent>
@@ -54,7 +58,7 @@ function FishID() {
                 </Center>
                 <Center>
                     <Box>
-                        {correctFish ? <CorrectFishInfo filteredFish={filteredFish} setCorrectFish={setCorrectFish} /> : <RadioButtons handleChange={handleChange} correctFish={correctFish} />}
+                        {correctFish ? <CorrectFishInfo filteredFish={filteredFish} setCorrectFish={setCorrectFish} /> : <FishRadioButtons handleChange={handleChange} correctFish={correctFish} />}
                     </Box>
                 </Center>
             </SimpleGrid>
