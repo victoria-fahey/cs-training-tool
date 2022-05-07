@@ -1,7 +1,7 @@
 /* eslint-disable indent */
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Box, Center, Container, Heading, Image, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Center, Container, Heading, SimpleGrid, Text, Image } from '@chakra-ui/react'
 
 import { getFish } from '../api/apiClient'
 
@@ -31,6 +31,8 @@ function FishID() {
             setCorrectFish(false)
         }
     }
+
+    console.log(filteredFish[0])
 
     return (
         <>
