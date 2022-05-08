@@ -18,6 +18,11 @@
   margin-right: 50px;
 }
 
+.bleach-flex-child {
+  flex: 2;
+  margin-right: 50px;
+}
+
 
 /* HOVERING OVER IMAGE TO DISPLAY TEXT */
 .info-image {
@@ -97,6 +102,11 @@
   transition: .3s;
 }
 
+.rightBleach {
+  background: linear-gradient(to right bottom, hsl(154, 97%, 62%), hsl(225, 97%, 62%));
+  transition: .3s;
+}
+
 .rad-design::before {
   content: '';
 
@@ -118,6 +128,11 @@
 }
 
 .wrongFish {
+  background-color: #f71735;
+  background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
+}
+
+.wrongBleach {
   background-color: #f71735;
   background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
 }
@@ -153,6 +168,13 @@
 
 .fish-id-image {
   /* object-fit: cover; */
+  width: auto;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bleach-id-image {
   width: auto;
   height: auto;
   background-color: white;
