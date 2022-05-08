@@ -4,7 +4,8 @@ const connection = require('knex')(config)
 
 module.exports = {
   getCorals,
-  getFish
+  getFish,
+  getBleaching
 }
 
 function getCorals(db = connection) {
@@ -14,5 +15,10 @@ function getCorals(db = connection) {
 
 function getFish(db = connection) {
   return db('fish')
+    .select()
+}
+
+function getBleaching(db = connection) {
+  return db('bleach')
     .select()
 }
