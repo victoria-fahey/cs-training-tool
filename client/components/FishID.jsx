@@ -32,8 +32,6 @@ function FishID() {
         }
     }
 
-    console.log(filteredFish[0])
-
     return (
         <>
             <Container maxW='auto' pb={5} centerContent>
