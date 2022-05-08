@@ -14,3 +14,9 @@ export function getFish() {
     .get(fishURL)
     .then(response => response.body)
 }
+
+export function getBleach() {
+  return request
+    .get(coralURL)
+    .then(response => response.body)
+}
