@@ -285,8 +285,8 @@ exports.seed = function (knex) {
         },
         {
           id: 32,
-          family: 'Fusiler',
-          species: 'Robust Fusiler',
+          family: 'Fusilier',
+          species: 'Robust Fusilier',
           image: '/images/fish/robust_fusiler.png',
           sizeRange: 'up to 60cm',
           morphology: 'Deep and laterally compressed fusiform body (very streamlined). The rear of the back, caudal fin, and the dorsal surface of the caudal peduncle are yellow. Rest of the body is silvery.',
@@ -303,8 +303,8 @@ exports.seed = function (knex) {
         },
         {
           id: 34,
-          family: 'Fusiler',
-          species: 'Scissortail Fusiler',
+          family: 'Fusilier',
+          species: 'Scissortail Fusilier',
           image: '/images/fish/scissortail_fusiler.png',
           sizeRange: '~ 25cm',
           morphology: 'Elongated, fusiform body with bluish colouration changing to white on the underside. There is a distinct yellow stripe over the lateral line. Highly forked caudal fin with a black spot at the end of the fin.',
