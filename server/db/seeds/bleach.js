@@ -56,7 +56,7 @@ exports.seed = function (knex) {
           id: 9,
           bleach: 'Massive - Not Bleached',
           info: 'Not coral bleaching, these are Parrotfish bite marks.',
-          image: 'images/bleach/parrotfish_bite.png'
+          image: '/images/bleach/parrotfish_bite.png'
         },
         {
           id: 10,
@@ -80,7 +80,7 @@ exports.seed = function (knex) {
           id: 13,
           bleach: 'Massive - Partially Bleached',
           info: '',
-          image: '/images/bleach/lobophyllia_pb2.png.png'
+          image: '/images/bleach/lobophyllia_pb2.png'
         },
         {
           id: 14,

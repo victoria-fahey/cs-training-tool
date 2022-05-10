@@ -2,6 +2,7 @@ import request from 'superagent'
 
 const coralURL = '/cs-training/'
 const fishURL = '/cs-training/fish-id/'
+const bleachURL = '/cs-training/coral-bleaching/'
 
 export function getCorals() {
   return request
@@ -17,6 +18,6 @@ export function getFish() {
 
 export function getBleach() {
   return request
-    .get(coralURL)
+    .get(bleachURL)
     .then(response => response.body)
 }

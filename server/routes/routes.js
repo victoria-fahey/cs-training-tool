@@ -25,4 +25,15 @@ router.get('/fish-id/', (req, res) => {
     })
 })
 
+router.get('/coral-bleaching/', (req, res) => {
+  db.getBleaching()
+    .then(bleach => {
+      res.json(bleach)
+      return null
+    })
+    .catch(err => {
+      res.status(500).send(err.message)
+    })
+})
+
 module.exports = router

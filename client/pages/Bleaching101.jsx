@@ -38,7 +38,7 @@ function Bleaching101() {
       </Container>
       <Container maxW='auto' centerContent>
         <Box >
-          <Image id='banner' src="/images/bleaching/coral-bleaching.jpg" />
+          <Image id='banner' src="/images/bleach/coral-bleaching.jpg" />
         </Box>
       </Container>
     </>
