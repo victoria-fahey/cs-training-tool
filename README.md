@@ -1,6 +1,6 @@
 # COREsea Coral Reef Monitoring Training Tool 
 
-**Release 2 is live at:** https://cs-training-tool.herokuapp.com/
+**Release 3 is live at:** https://cs-training-tool.herokuapp.com/
 
 This web application aims to provide an interactive training tool to help coral reef scientists/students with: 
 
@@ -15,3 +15,7 @@ This release will start with genus-level coral identifiaciton and provide inform
 ## Release 2 - fish ID
 
 This release includes a quiz for fish identification to family level, with correct answers showing information on morphology, species name, and additional info. 
+
+## Release 3 - coral bleaching 
+
+This release includes a quiz for identifying growth form and corresponding bleaching status. 
