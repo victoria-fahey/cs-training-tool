@@ -33,7 +33,7 @@ exports.seed = function (knex) {
         },
         {
           id: 4,
-          family: 'Serranidae',
+          family: 'Grouper',
           species: 'Spotted Coral Grouper',
           image: '/images/fish/barcheek_grouper.png',
           sizeRange: '~ 35cm',
@@ -78,7 +78,7 @@ exports.seed = function (knex) {
         },
         {
           id: 9,
-          family: 'Serranidae',
+          family: 'Grouper',
           species: 'Blacktip Grouper',
           image: '/images/fish/blacktip_grouper.jpeg',
           sizeRange: '~ 22cm',
@@ -96,7 +96,7 @@ exports.seed = function (knex) {
         },
         {
           id: 11,
-          family: 'Serranidae',
+          family: 'Grouper',
           species: 'Blue Lined Grouper',
           image: '/images/fish/bluelined_grouper.png',
           sizeRange: '34cm',
@@ -114,7 +114,7 @@ exports.seed = function (knex) {
         },
         {
           id: 13,
-          family: 'Serranidae',
+          family: 'Grouper',
           species: 'Brown Banded Grouper',
           image: '/images/fish/brownbanded_grouper.jpeg',
           sizeRange: '30cm',
@@ -186,7 +186,7 @@ exports.seed = function (knex) {
         },
         {
           id: 21,
-          family: 'Serranidae',
+          family: 'Grouper',
           species: 'Honeycomb Grouper',
           image: '/images/fish/honeycomb_grouper.png',
           sizeRange: '32cm',
@@ -312,7 +312,7 @@ exports.seed = function (knex) {
         },
         {
           id: 35,
-          family: 'Serranidae',
+          family: 'Soapfish',
           species: 'Barred Soapfish',
           image: '/images/fish/soapfish.png',
           sizeRange: '16 - 25cm',
@@ -339,7 +339,7 @@ exports.seed = function (knex) {
         },
         {
           id: 38,
-          family: 'Holocentridae',
+          family: 'Soldierfish',
           species: 'Pinecone Soldierfish',
           image: '/images/fish/soldierfish.png',
           sizeRange: '18 - 30cm',
@@ -357,7 +357,7 @@ exports.seed = function (knex) {
         },
         {
           id: 40,
-          family: 'Holocentridae',
+          family: 'Squirrelfish',
           species: 'Redcoat Squirrelfish',
           image: '/images/fish/squirrelfish.png',
           sizeRange: '15 - 40cm',
