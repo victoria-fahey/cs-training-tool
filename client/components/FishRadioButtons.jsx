@@ -101,22 +101,44 @@ function FishRadioButtons(props) {
                         <input
                             type='radio' className='rad-input' name='fishChoice'
                             onChange={handleChange}
-                            value='Holocentridae' />
+                            value='Squirrelfish' />
                         {correctFish
                             ? <div className='rad-design rightFish'></div>
                             : <div className='rad-design wrongFish'></div>}
-                        <div className='rad-text'>Holocentridae</div>
+                        <div className='rad-text'>Squirrelfish</div>
                     </label>
 
                     <label className='rad-label'>
                         <input
                             type='radio' className='rad-input' name='fishChoice'
                             onChange={handleChange}
-                            value='Serranidae' />
+                            value='Soldierfish' />
                         {correctFish
                             ? <div className='rad-design rightFish'></div>
                             : <div className='rad-design wrongFish'></div>}
-                        <div className='rad-text'>Serranidae</div>
+                        <div className='rad-text'>Soldierfish</div>
+                    </label>
+
+                    <label className='rad-label'>
+                        <input
+                            type='radio' className='rad-input' name='fishChoice'
+                            onChange={handleChange}
+                            value='Grouper' />
+                        {correctFish
+                            ? <div className='rad-design rightFish'></div>
+                            : <div className='rad-design wrongFish'></div>}
+                        <div className='rad-text'>Grouper</div>
+                    </label>
+
+                    <label className='rad-label'>
+                        <input
+                            type='radio' className='rad-input' name='fishChoice'
+                            onChange={handleChange}
+                            value='Soapfish' />
+                        {correctFish
+                            ? <div className='rad-design rightFish'></div>
+                            : <div className='rad-design wrongFish'></div>}
+                        <div className='rad-text'>Soapfish</div>
                     </label>
 
                     <label className='rad-label'>
